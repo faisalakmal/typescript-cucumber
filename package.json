@@ -1,0 +1,35 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "typescript-webdriverio",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && cucumber-js --require dist/step-definitions/**/*.js features/*.feature",
+    "wdio": "wdio run ./wdio.conf.ts"
+  },
+  "keywords": [
+    "webdriverio",
+    "typescript",
+    "cucumber",
+    "nodejs"
+  ],
+  "author": "faisalakml",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^8.6.8",
+    "chai": "^4.3.7",
+    "cucumber": "^6.0.7",
+    "selenium-webdriver": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.16",
+    "@wdio/cucumber-framework": "^8.6.8",
+    "@wdio/local-runner": "^8.6.8",
+    "@wdio/spec-reporter": "^8.6.8",
+    "chromedriver": "^111.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2",
+    "wdio-chromedriver-service": "^8.1.1",
+    "wdio-wait-for": "^3.0.2"
+  }
+}
